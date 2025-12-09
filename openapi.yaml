@@ -1,0 +1,119 @@
+openapi: 3.0.4
+info:
+  title: Tip Calculator
+  description: Tip Calculator is a tool for calculating tips and splitting bills among multiple people. It provides common tip percentage comparisons and per-person breakdowns.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/tipcalculator:
+    get:
+      summary: Calculate Tip
+      description: Tip Calculator is a tool for calculating tips and splitting bills among multiple people. It provides common tip percentage comparisons and per-person breakdowns.
+      operationId: tipcalculator
+      parameters:
+      - name: amount
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The bill amount before tip
+        example: '100'
+      - name: percentage
+        default: '15'
+        in: query
+        schema:
+          type: string
+        required: false
+        description: 'Tip percentage (0-100, default: 15)'
+        example: '18'
+      - name: people
+        default: '1'
+        in: query
+        schema:
+          type: string
+        required: false
+        description: 'Number of people to split the bill (default: 1)'
+        example: '4'
+      - name: currency
+        default: USD
+        in: query
+        schema:
+          type: string
+        required: false
+        description: 'Currency code for display (default: USD)'
+        example: USD
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  bill_amount: 100
+                  tip_percentage: 18
+                  tip_amount: 18
+                  total_amount: 118
+                  currency: USD
+                  split_between: 4
+                  per_person:
+                    bill_amount: 25
+                    tip_amount: 4.5
+                    total_amount: 29.5
+                  common_tip_amounts:
+                  - percentage: 10
+                    tip_amount: 10
+                    total: 110
+                    per_person: 27.5
+                  - percentage: 15
+                    tip_amount: 15
+                    total: 115
+                    per_person: 28.75
+                  - percentage: 18
+                    tip_amount: 18
+                    total: 118
+                    per_person: 29.5
+                  - percentage: 20
+                    tip_amount: 20
+                    total: 120
+                    per_person: 30
+                  - percentage: 25
+                    tip_amount: 25
+                    total: 125
+                    per_person: 31.25
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
